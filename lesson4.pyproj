@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8764f8dc-e43a-4966-9fb6-cda1a8a68264</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>homework\02_global_color.py</StartupFile>
+    <StartupFile>homework\04_fractal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -32,6 +32,9 @@
     <Compile Include="lecture_snippets\04_recursion.py" />
     <Compile Include="lecture_snippets\05_builtin.py" />
     <Compile Include="lesson4.py" />
+    <Compile Include="tests.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="practice\01_triangle.py" />
     <Compile Include="practice\02_fractal.py" />
     <Compile Include="practice\02_snowflake.py" />
