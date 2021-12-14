@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8764f8dc-e43a-4966-9fb6-cda1a8a68264</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>lesson4.py</StartupFile>
+    <StartupFile>homework\02_global_color.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

@@ -11,4 +11,6 @@ import simple_draw as sd
 
 # TODO здесь ваш код
 
+# really? i have already did it in ex.01!
+
 sd.pause()
