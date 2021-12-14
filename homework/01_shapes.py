@@ -2,6 +2,8 @@
 
 import simple_draw as sd
 
+sd.set_screen_size(width=1600, height=900)
+
 # Часть 1.
 # Написать функции рисования равносторонних геометрических фигур:
 # - треугольника
@@ -28,6 +30,58 @@ import simple_draw as sd
 # Результат решения см lesson_004/results/exercise_01_shapes.jpg
 
 # TODO здесь ваш код
+
+
+
+def triangle(point, angle=0, length=200, width=3):
+    for add_angle in range(0, 360, 120):
+        vect = sd.get_vector(start_point=point, angle=angle+add_angle, length=length, width=width)
+        point = vect.end_point
+        vect.draw()
+
+point = sd.get_point(200,100)
+triangle(point)
+
+def square(point, angle=0, length=200, width=3):
+    for add_angle in range(0,360,90):
+        vect = sd.get_vector(start_point=point, angle=angle+add_angle, length=length, width=width)
+        point = vect.end_point
+        vect.draw()
+
+point_1 = sd.get_point(400,300)
+square(point_1)
+
+def pentagon(point, angle=0, length=200, width=3):
+    for add_angle in range(0,360,72):
+        vect = sd.get_vector(start_point=point, angle=angle+add_angle, length=length, width=width)
+        point = vect.end_point
+        vect.draw()
+
+point_2 = sd.get_point(150,550)
+pentagon(point_2)
+
+def hexagon(point, angle=0, length=200, width=3):
+    for add_angle in range(0,360,60):
+        vect = sd.get_vector(start_point=point, angle=angle+add_angle, length=length, width=width)
+        point = vect.end_point
+        vect.draw()
+
+point_3 = sd.get_point(800, 150)
+hexagon(point_3)
+
+def polygon(point, angle_number, angle=0, length=200, width=3):
+    angles_sum = (angle_number - 2) * 180
+    internal_angle = angles_sum / angle_number
+    external_angle = 180 - internal_angle
+    add_angle = 0
+    while add_angle<360:
+        vect = sd.get_vector(start_point=point, angle=angle+add_angle, length=length, width=width)
+        point = vect.end_point
+        add_angle+=external_angle
+        vect.draw()
+
+point_4 = sd.get_point(1250, 300)
+polygon(point_4, 5, 30)
 
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
